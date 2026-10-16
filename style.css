@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('assets/roboto-regular.ttf') format('truetype');
+}
+
+/* Desktop measurements follow the supplied reference stylesheet. */
+html {
+    margin: 0;
+    padding: 0;
+    height: 200%;
+}
+
+body {
+    margin: 0 10px;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+#left {
+    float: left;
+    width: 270px;
+    height: 100%;
+}
+
+#right {
+    margin-left: 270px;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: #0000EE;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #551A8B;
+}
+
+div {
+    margin: 10px 0;
+}
+
+a:hover {
+    color: #0000EE;
+}
+
+li {
+    margin: 5px 0;
+}
+
+summary h3 {
+    display: inline;
+}
+
+.dropdown {
+    margin: 10px 0;
+}
+
+.dropdown-menu {
+    border: 1px solid #3087dd;
+    background-color: #c4e7ff;
+    padding: 5px;
+    cursor: pointer;
+    list-style: none;
+}
+
+.dropdown-menu::-webkit-details-marker {
+    display: none;
+}
+
+.dropdown-menu::before {
+    content: '\25B8\0009 ';
+}
+
+.dropdown[open] > .dropdown-menu::before {
+    content: '\25BE\0009 ';
+}
+
+#lntsg_table {
+    margin: 1%;
+    width: 98%;
+}
+
+td, th {
+    border: 1px solid #ccc;
+    padding: 5px;
+    max-width: 10px;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+td.green {
+    border: 1px solid #0000EE;
+}
+
+/* Keep the reference desktop layout; stack the same content on small screens. */
+@media (max-width: 640px) {
+    html, body {
+        height: auto;
+    }
+
+    #left {
+        float: none;
+        width: auto;
+        height: auto;
+    }
+
+    #right {
+        display: none;
+    }
+
+    body {
+        overflow-wrap: anywhere;
+    }
+
+    img {
+        max-width: calc(100% - 2px);
+    }
+
+    .table-scroll {
+        overflow-x: auto;
+    }
+}

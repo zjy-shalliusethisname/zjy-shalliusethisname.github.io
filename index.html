@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic homepage framework.">
+  <link rel="stylesheet" href="style.css">
+  <title>[Your Name]</title>
+</head>
+<body>
+  <!-- Replace this image with your photograph; retain its width. -->
+  <div id="left">
+    <img src="assets/portrait-placeholder.svg" alt="Photograph placeholder" width="250" height="301">
+  </div>
+  <div id="right"></div>
+
+  <a href="event.html">[Event title]</a>
+  <h2>[Your Name]</h2>
+
+  <details>
+    <summary><h3>contact information</h3></summary>
+    <div>My email address is [name] at [institution] dot [domain].</div>
+    <div>[Office and institutional address]</div>
+  </details>
+
+  <details>
+    <summary><h3>bio</h3></summary>
+    <div>[Current position and institution]</div>
+    <div>[Research interests]</div>
+    <div>[Funding or other information, if applicable]</div>
+    <div>[Previous positions, education, and supervisors]</div>
+    <div>Here is my <a href="resources.html#cv">CV</a>.</div>
+  </details>
+
+  <details open>
+    <summary><h3>AI Statement</h3></summary>
+    [Your statement]
+  </details>
+
+  <details open>
+    <summary><h3>publications and preprints</h3></summary>
+    [Optional information about paper versions]
+    <ul>
+      <!-- Duplicate or remove list items as needed. Replace resource links with real URLs. -->
+      <li><i>[Paper title]</i>, with <a href="resources.html#collaborators">[Coauthor]</a> (<a href="resources.html#arxiv">arxiv</a>, <a href="resources.html#papers">pdf</a>), [status].</li>
+      <li><i>[Paper title]</i>, with <a href="resources.html#collaborators">[Coauthor]</a> and <a href="resources.html#collaborators">[Coauthor]</a> (<a href="resources.html#arxiv">arxiv</a>, <a href="resources.html#papers">pdf</a>), [status].</li>
+      <li><i>[Paper title]</i> (<a href="resources.html#journals">journal</a>, <a href="resources.html#arxiv">arxiv</a>, <a href="resources.html#papers">pdf</a>).</li>
+    </ul>
+  </details>
+
+  <details open>
+    <summary><h3>expository work</h3></summary>
+    <ul>
+      <li><i>[Expository article title]</i>, with <a href="resources.html#collaborators">[Coauthor]</a> (<a href="resources.html#expository">pdf</a>).</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary><h3>some teaching and seminars</h3></summary>
+    <ul>
+      <li>In [term and year], I am teaching <a href="course.html">[Course title]</a>.</li>
+      <li>In [term and year], I am organizing <a href="seminar.html">[Seminar title]</a>.</li>
+      <li>
+        In [term and year], [Study group information].
+        <details class="dropdown">
+          <summary class="dropdown-menu">Notes From the Study Group</summary>
+          <div class="table-scroll">
+            <table id="lntsg_table">
+              <thead>
+                <tr><th></th><th colspan="2">[Track 1]</th><th colspan="2">[Track 2]</th></tr>
+                <tr><th>Date</th><th>Title</th><th>Speaker</th><th>Title</th><th>Speaker</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>[Date]</td><td class="green"><a href="resources.html#notes">[Talk title]</a></td><td>[Speaker]</td><td class="green"><a href="resources.html#notes">[Talk title]</a></td><td>[Speaker]</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </details>
+      </li>
+    </ul>
+  </details>
+
+  <details>
+    <summary><h3>notes</h3></summary>
+    <ul>
+      <li><a href="resources.html#notes">[Note title]</a>: [Brief description]</li>
+      <li><a href="resources.html#notes">[Note title]</a>: [Brief description]</li>
+    </ul>
+  </details>
+</body>
+</html>
